@@ -1,0 +1,39 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+blockquote {
+    border: none;
+    background: none;
+    font-style: normal;
+    padding-left: 30px;  /* Adjust this value for the desired indentation */
+}
+
+.md-typeset blockquote {
+    border: none !important;
+    background: none !important;
+    font-style: normal !important;
+    padding-left: 30px !important;  /* Adjust this value for the desired indentation */
+    color: inherit;
+}
+
+.md-nav__list {
+    border-left: none !important;
+}
+
+/* Optionally, adjust indentation if needed */
+.md-nav__item {
+    border-left: none !important;
+    padding-left: 0 !important;
+}
