@@ -364,7 +364,73 @@
           <li class="md-nav__item">
   <a href="#a-prototype" class="md-nav__link">
     <span class="md-ellipsis">
-      A. Prototype
+      a. Prototype
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-api-api-documentation-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. API - API Documentation Url
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="b. API - API Documentation Url">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-responses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Responses:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-actual-result-and-equivalent-response-attribute" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Actual result and equivalent response attribute
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-table-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Table View
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B. Table View">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#b-api-api-documentation-url_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. API - API Documentation Url
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-features-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Features / Functions
     </span>
   </a>
   
@@ -377,6 +443,96 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clock-in-clock-out" class="md-nav__link">
+    <span class="md-ellipsis">
+      CLOCK IN / CLOCK OUT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CLOCK IN / CLOCK OUT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-prototype_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      A. Prototype
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-features-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      B. Features / Functions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="B. Features / Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-gps" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. GPS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="a. GPS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Response:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-how-to-detect-if-clock-in-or-clock-out-button-will-show" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. How to detect if CLOCK IN or CLOCK OUT button will show
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-api-error-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. API Error codes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test Navigation
+    </span>
+  </a>
   
 </li>
       
@@ -411,7 +567,114 @@ user’s selection. It consists of two separate tabs:</p>
 <p>Displays the total hours rendered of an employee within the month selected. Work hours
 are grouped based on Reg Schedules, Overtime Schedules, Special Days, Lates, Undertimes,
 Absences, etc</p>
-<h4 id="a-prototype">A. Prototype</h4>
+<h4 id="a-prototype">a. Prototype</h4>
+<p><img alt="Monthly Closing Report - Summary View" loading="lazy" src="../images/mcr_summary_view.png" /></p>
+<h4 id="b-api-api-documentation-url">b. API - <a href="https://documenter.getpostman.com/view/1675910/RzthSX32">API Documentation Url</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>v2/reports/my-monthly-work-report?org_id=4338&amp;start_date=2019-01-0100:00:00&amp;end_date=2019-01-31 23:59:59&amp;employee_id=8464&amp;limit=0 
+</code></pre></div>
+<h5 id="sample-responses">Sample Responses:</h5>
+<p><img alt="Sample Response 1" loading="lazy" src="../images/sample_response_1.png" /></p>
+<p><img alt="Sample Response 2" loading="lazy" src="../images/sample_response_2.png" /></p>
+<h4 id="c-actual-result-and-equivalent-response-attribute">c. Actual result and equivalent response attribute</h4>
+<blockquote>
+<p>I. Day Shift Reg = <code>record.day_shift.regular_work</code></p>
+<p>II. Day Shift Early = <code>record.day_shift.early_work</code></p>
+<p>III. Day Shift OT = <code>record.day_shift.overtime_work</code></p>
+<p>IV. Day Shift Approved OT = <code>record.day_shift. approved_overtime_work</code></p>
+<p>V. Night Shift Reg = <code>record.night_shift_shift.regular_work</code></p>
+<p>VI. Night Shift Early = <code>record.night_shift.early_work</code></p>
+<p>VII. Night Shift OT = <code>record.night_shift.overtime_work</code></p>
+<p>VIII. Night Shift Approved = <code>record.night_shift.approved_overtime_work</code></p>
+<p>IX. Special Day Reg = <code>record.special_day_shift.regular_work</code></p>
+<p>X. Special Day Early = <code>record.special_day_shift.early_work</code></p>
+<p>XI. Special Day OT = <code>record.special_day_shift.overtime_work</code></p>
+<p>XII. Special Day Approved OT = <code>record.special_day_shift. approved_overtime_work</code></p>
+<p>XIII. Special Night Reg = <code>record.special_night_shift.regular_work</code></p>
+<p>XIV. Special Night Early = <code>record.special_night _shift.early_work</code></p>
+<p>XV. Special Night OT = <code>record.special_night _shift.overtime_work</code></p>
+<p>XVI. Special Night Approved OT = <code>` record.special_night_shift.approved_overtime_work</code></p>
+<p>XVII. Late = <code>record.late_hours</code></p>
+<p>XVIII. Absent = <code>record.absences</code></p>
+<p>XIX. Undertime = <code>record.undertime_hours</code></p>
+</blockquote>
+<h3 id="b-table-view">B. Table View</h3>
+<p><img alt="Monthly Closing Report - Table View" loading="lazy" src="../images/mcr_table_view.png" /></p>
+<h4 id="b-api-api-documentation-url_1">b. API - <a href="https://documenter.getpostman.com/view/1675910/RzthSX32">API Documentation Url</a></h4>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>v2/reports/my-time-sheet-report?org_id=4338&amp;start_date=2019-02-0100:00:00&amp;end_date=2019-02-28 23:59:59&amp;employee_id=8680&amp;limit=0
+</code></pre></div>
+<h4 id="c-features-functions">c. Features / Functions</h4>
+<blockquote>
+<p>I. User can select a month to base the report.</p>
+<p>II. The page can display all errors in the attendance or time record.</p>
+<p>III. Each day, if contains error, will be marked with the red background as displayed on the screenshot above (it could be the entire row as planned or just the first column).</p>
+<p>IV. Each cell displays the value based from the return of API call.</p>
+<p>V. Clicking the day row will redirect to Work Schedule (calendar view). </p>
+<p>VI. If <code>enable_work_type</code> is true, hide the following columns: 4 columns of <strong>Approved OT</strong>.</p>
+<p>VII. If <code>enable_work_type</code> is false, hide the following columns: <strong>Day Shift Early, NightShift Early, Special Day Early, Special Night  Early</strong>.</p>
+<p>VIII. If no conflict/errors found, a CONFIRM ALL button will show (see prototype).</p>
+</blockquote>
+<h2 id="clock-in-clock-out">CLOCK IN / CLOCK OUT</h2>
+<p>Allows employee to clock in, clock out or take a break. This is the default display when you open the
+Sidebar menu.</p>
+<h3 id="a-prototype_1">A. Prototype</h3>
+<p><img alt="Prototype image" loading="lazy" src="../images/prototype.png" /></p>
+<h3 id="b-features-functions">B. Features / Functions</h3>
+<h4 id="a-gps">a. GPS</h4>
+<blockquote>
+<p>CASE A : <code>check_location</code>  is false</p>
+<ul>
+<li>PROCEED TO CLOCKIN/CLOCKOUT PROCESS</li>
+</ul>
+<p>CASE B : <code>check_location</code> is true</p>
+<blockquote>
+<p>I. If <code>check_location</code> is true, on page load, get the list of areas available for that employee.</p>
+<p>II. Call API <a href="https://documenter.getpostman.com/view/1675910/RzthSX32">API Documentation Url</a>
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a> v2/employees/employee?id=32
+</code></pre></div></p>
+</blockquote>
+</blockquote>
+<h5 id="sample-response">Sample Response:</h5>
+<p><img alt="Monthly Closing Report - Table View" loading="lazy" src="../images/sample_response_clock_in_clock_out_caseB.png" /></p>
+<blockquote>
+<blockquote>
+<p>III. Check if GPS is enabled in user’s device. If not, ask permission then turn on. If
+turned on, start receiving location updates to get current latitude and longitude</p>
+<p>IV. On click CLOCK IN / CLOCK OUT button, check again if the GPS is enabled
+(because the user can still turn it off while they are on that page), then check if
+the location is within the employee areas based on the latitude, longitude and
+the radius set)</p>
+<p>V. PROCEED TO CLOCKIN/OUT PROCESS</p>
+</blockquote>
+</blockquote>
+<h4 id="b-how-to-detect-if-clock-in-or-clock-out-button-will-show">b. How to detect if CLOCK IN or CLOCK OUT button will show</h4>
+<blockquote>
+<p>I. Call API <a href="https://documenter.getpostman.com/view/1675910/RzthSX32">API Documentation Url</a>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>v2/employees/timeclock/status?employee_id=32
+</code></pre></div></p>
+<p>This will return 3 major data:</p>
+<ol>
+<li>record -&gt; current time clock record of employee</li>
+</ol>
+<blockquote>
+<p>CASE A. If employee has current time_clock record, time clock status is CLOCKED_IN so button will show CLOCK OUT. Unless:</p>
+<blockquote>
+<p>Check company_settings <code>“allowed_actual_work_hours”</code>. Get <code>current_working_hours</code> by getting the time difference of <code>record.clock_in</code> and current time.</p>
+<p>a. If <code>current_working_hours &gt; allowed_actual_work_hours</code>, time clock status is still CLOCKED_IN but the button to show is CLOCK IN.</p>
+<p>b. If <code>current_working_hours &lt; allowed_actual_work_hours</code>, time clock status is CLOCKED_IN and the button to show is CLOCK OUT.</p>
+</blockquote>
+<p>CASE B: if employee has NO current time_clock record, time clock status is CLOCKED_OUT so button will show CLOCK IN.</p>
+</blockquote>
+<ol>
+<li>
+<p>prev_record -&gt; returns the employee’s previous time_clock record to determine the LAST CLOCKED IN or CLOCKED OUT time to be displayed on the same page</p>
+</li>
+<li>
+<p>break_record -&gt; if this data is not null and company settings <code>“enable_break”</code> is true, display BREAK_OUT option for user (second button in this page)</p>
+</li>
+</ol>
+</blockquote>
+<h4 id="b-api-error-codes">b. API Error codes</h4>
+<h2 id="test-navigation">Test Navigation</h2>
 
 
 
@@ -481,7 +744,7 @@ Absences, etc</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "toc.follow", "navigation.top", "navigation.expand", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.60a45f97.min.js"></script>
